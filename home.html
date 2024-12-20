@@ -1,11 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <title>VideoBelajar</title>
 </head>
-<body>
+
+<body class="bg-backgroundPrimary">
+    <nav class="bg-customWhite p-4">
+        <div class="mx-auto flex items-center justify-between">
+            <!-- insert logo -->
+            <img src="images/logo.png" alt="logo" class="h-[40px] sm:w-[237px] sm:h-[56px]">
+            <!-- nav menu -->
+            <div class="hidden md:flex pr-[120px]">
+                <ul class="flex gap-[36px] items-center">
+                    <li><a href="" class="text-slate-500">Kategori</a></li>
+                    <li><a href="">
+                            <a href=""><img src="images/Avatar.png" alt="Profile image"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Hamburger Button (Visible on Mobile) -->
+            <button id="hamburger" class="block md:hidden">
+                <span class="block w-6 h-0.5 bg-black mb-1"></span>
+                <span class="block w-6 h-0.5 bg-black mb-1"></span>
+                <span class="block w-6 h-0.5 bg-black"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div id="mobileMenu" class="hidden flex-col p-4 space-y-2 bg-customWhite md:hidden">
+            <a href="" class="text-slate-500">Kategori</a>
+            <a href=""><img src="images/Avatar.png" alt="Profile image"></a>
+        </div>
+
+    </nav>
+
+    <main>
+        <!-- section banner 1 -->
+        <section>
+            <div
+                class="bg-[url('/images/banner.png')] bg-no-repeat bg-cover max-w-full h-fit sm:h-fit sm:max-w-[80%] lg:max-w-[80%] mx-4 sm:mx-auto p-6 mt-[60px] mb-[60px] rounded-lg">
+                <div class="relative z-10  items-center justify-center h-full text-white block">
+                    <div class="block mt-[10px]">
+                        <h2
+                            class="leading-[25px] text-[24px] font-bold text-center px-[60px] lg:leading-[45px] lg:text-[40px] lg:px-[220px] lg:text-center lg:font-[700]">
+                            Revolusi Pembelajaran: Temukan Ilmu Baru melalui Platform Video Interaktif!
+                        </h2>
+                        <p class="px-[12px] pt-2 text-center lg:px-[100px]">
+                            Temukan ilmu baru yang menarik dan mendalam melalui koleksi video pembelajaran berkualitas
+                            tinggi. Tidak hanya itu, Anda juga dapat berpartisipasi dalam latihan interaktif yang akan
+                            meningkatkan pemahaman Anda.
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center">
+                        <button
+                            class="bg-greenPrimary px-[6px] py-[8px] rounded-lg font-[400] text-[14] lg:w-[32%] sm:w-[40%]">
+                            Temukan Video Course untuk Dipelajari!
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section menu course -->
+        <section>
+            <div
+                class="max-w-full h-fit sm:h-fit sm:max-w-[80%] lg:max-w-[80%] mx-4 sm:mx-auto  mt-[60px] mb-[20px] rounded-lg">
+                <div>
+                    <h1 class="font-[700] text-[30px]">Koleksi Video Pembelajaran Unggulan</h1>
+                    <p class="font-[500] text-[18px] text-textColorsecond mt-1">Jelajahi Dunia Pengetahuan Melalui
+                        Pilihan
+                        Kami!</p>
+                </div>
+
+                <div class="mt-10 overflow-x-auto py-3 ">
+                    <ul class="flex gap-9  whitespace-nowrap pr-4 text-textColorsecond font-medium text-[14px] ">
+                        <li class="relative font-semibold text-orange-500">
+                            <a href="#">Semua Kelas</a>
+                            <span
+                                class="absolute bottom-[-9px] left-1 transform -translate-x-1/2 w-[69px] border-b-4 border-orange-500"></span>
+                        </li>
+                        <li><a href="#">Pemasaran</a></li>
+                        <li><a href="#">Desain</a></li>
+                        <li><a href="#">Pengembangan Diri</a></li>
+                        <li class="pr-4"><a href="#">Bisnis </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="block lg:flex lg:flex-wrap gap-4 justify-center sm:ml-9 md:ml-12 mt-1 mb-15 
+            lg:mx-[73px] lg:gap-2
+        ">
+                <!-- card start -->
+                <div class="bg-white w-[90%] mx-5 py-5 px-5 my-3 h-fit block rounded-lg drop-shadow-xl shadow-xl sm:px-9
+                lg:w-[30%] lg:px-3 lg:mx-0
+            ">
+                    <!-- gambar content judul deskrispsi -->
+                    <div class="flex gap-5 lg:block whitespace-normal">
+                        <img src="images/card-image2.png" alt="card image" class="w-[120px] h-[120px] rounded-lg object-cover shadow-2xl
+                    lg:w-full lg:h-fit lg:shadow-sm
+                    ">
+                        <!-- title desc(desc hidden on mobile) photos and name profesi -->
+                        <div>
+                            <!-- title and desc(hidden on mobile) -->
+                            <div>
+                                <h3 class="font-bold text-[15px] leading-7 
+                            lg:mt-4 lg:text-[20px]">Big 4 Auditor Financial Analyst</h3>
+                                <p
+                                    class="hidden lg:flex lg:mt-[10px] lg:line-clamp-2 text-textColorsecond text-[15px] font-light">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ratione voluptates
+                                    aliquam porro. Esse sed eum minima quasi consectetur, quia aliquid suscipit aut
+                                    blanditiis, eaque excepturi velit sint, nam a?</p>
+                            </div>
+                            <!-- image and name profesi -->
+                            <div class="flex gap-3 mt-[10px]">
+                                <img src="images/ava.png" alt="avatar teach" class="w-[45px] h-[45px] rounded-sm
+                            ">
+                                <div class="block">
+                                    <h4 class="font-semibold text-[16px]">Jenna Ortega</h4>
+                                    <p class="text-[12px] text-textColorsecond">Senior Accountant
+                                        <span class="hidden lg:inline">di <span
+                                                class="hidden lg:inline lg:font-bold">Gojek</span></span>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- rating dan price -->
+                    <div class="flex mt-[14px] justify-between mr-2 lg:gap-3 lg:mr-0">
+                        <div class="flex justify-center gap-2 lg:mt-1">
+                            <img src="images/Rating.png" alt="rating"
+                                class="w-[90px] h-[20px] mt-[10px] lg:w-[100px] lg:h-[20px] lg:mt-1.5">
+                            <p class=" text-textColorsecond mt-2 lg:text-[12px]">3.5 (86)</p>
+                        </div>
+                        <div>
+                            <p class="text-greenPrimary text-[20px] mt-[5px] font-[700]">RP 300K </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of card -->
+
+                <!-- card start -->
+                <div class="bg-white w-[90%] mx-5 py-5 px-5 my-3 h-fit block rounded-lg drop-shadow-xl shadow-xl sm:px-9
+             lg:w-[30%] lg:px-3 lg:mx-0
+         ">
+                    <!-- gambar content judul deskrispsi -->
+                    <div class="flex gap-5 lg:block whitespace-normal">
+                        <img src="images/card-image2.png" alt="card image" class="w-[120px] h-[120px] rounded-lg object-cover shadow-2xl
+                 lg:w-full lg:h-fit lg:shadow-sm
+                 ">
+                        <!-- title desc(desc hidden on mobile) photos and name profesi -->
+                        <div>
+                            <!-- title and desc(hidden on mobile) -->
+                            <div>
+                                <h3 class="font-bold text-[15px] leading-7 
+                         lg:mt-4 lg:text-[20px]">Big 4 Auditor Financial Analyst</h3>
+                                <p
+                                    class="hidden lg:flex lg:mt-[10px] lg:line-clamp-2 text-textColorsecond text-[15px] font-light">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ratione voluptates
+                                    aliquam porro. Esse sed eum minima quasi consectetur, quia aliquid suscipit aut
+                                    blanditiis, eaque excepturi velit sint, nam a?</p>
+                            </div>
+                            <!-- image and name profesi -->
+                            <div class="flex gap-3 mt-[10px]">
+                                <img src="images/ava.png" alt="avatar teach" class="w-[45px] h-[45px] rounded-sm
+                         ">
+                                <div class="block">
+                                    <h4 class="font-semibold text-[16px]">Jenna Ortega</h4>
+                                    <p class="text-[12px] text-textColorsecond">Senior Accountant
+                                        <span class="hidden lg:inline">di <span
+                                                class="hidden lg:inline lg:font-bold">Gojek</span></span>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- rating dan price -->
+                    <div class="flex mt-[14px] justify-between mr-2 lg:gap-3 lg:mr-0">
+                        <div class="flex justify-center gap-2 lg:mt-1">
+                            <img src="images/Rating.png" alt="rating"
+                                class="w-[90px] h-[20px] mt-[10px] lg:w-[100px] lg:h-[20px] lg:mt-1.5">
+                            <p class=" text-textColorsecond mt-2 lg:text-[12px]">3.5 (86)</p>
+                        </div>
+                        <div>
+                            <p class="text-greenPrimary text-[20px] mt-[5px] font-[700]">RP 300K </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of card -->
+
+                <!-- card start -->
+                <div class="bg-white w-[90%] mx-5 py-5 px-5 my-3 h-fit block rounded-lg drop-shadow-xl shadow-xl sm:px-9
+          lg:w-[30%] lg:px-3 lg:mx-0
+      ">
+                    <!-- gambar content judul deskrispsi -->
+                    <div class="flex gap-5 lg:block whitespace-normal">
+                        <img src="images/card-image2.png" alt="card image" class="w-[120px] h-[120px] rounded-lg object-cover shadow-2xl
+              lg:w-full lg:h-fit lg:shadow-sm
+              ">
+                        <!-- title desc(desc hidden on mobile) photos and name profesi -->
+                        <div>
+                            <!-- title and desc(hidden on mobile) -->
+                            <div>
+                                <h3 class="font-bold text-[15px] leading-7 
+                      lg:mt-4 lg:text-[20px]">Big 4 Auditor Financial Analyst</h3>
+                                <p
+                                    class="hidden lg:flex lg:mt-[10px] lg:line-clamp-2 text-textColorsecond text-[15px] font-light">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ratione voluptates
+                                    aliquam porro. Esse sed eum minima quasi consectetur, quia aliquid suscipit aut
+                                    blanditiis, eaque excepturi velit sint, nam a?</p>
+                            </div>
+                            <!-- image and name profesi -->
+                            <div class="flex gap-3 mt-[10px]">
+                                <img src="images/ava.png" alt="avatar teach" class="w-[45px] h-[45px] rounded-sm
+                      ">
+                                <div class="block">
+                                    <h4 class="font-semibold text-[16px]">Jenna Ortega</h4>
+                                    <p class="text-[12px] text-textColorsecond">Senior Accountant
+                                        <span class="hidden lg:inline">di <span
+                                                class="hidden lg:inline lg:font-bold">Gojek</span></span>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- rating dan price -->
+                    <div class="flex mt-[14px] justify-between mr-2 lg:gap-3 lg:mr-0">
+                        <div class="flex justify-center gap-2 lg:mt-1">
+                            <img src="images/Rating.png" alt="rating"
+                                class="w-[90px] h-[20px] mt-[10px] lg:w-[100px] lg:h-[20px] lg:mt-1.5">
+                            <p class=" text-textColorsecond mt-2 lg:text-[12px]">3.5 (86)</p>
+                        </div>
+                        <div>
+                            <p class="text-greenPrimary text-[20px] mt-[5px] font-[700]">RP 300K </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of card -->
+
+                <!-- card start -->
+                <div class="bg-white w-[90%] mx-5 py-5 px-5 my-3 h-fit block rounded-lg drop-shadow-xl shadow-xl sm:px-9
+       lg:w-[30%] lg:px-3 lg:mx-0
+   ">
+                    <!-- gambar content judul deskrispsi -->
+                    <div class="flex gap-5 lg:block whitespace-normal">
+                        <img src="images/card-image2.png" alt="card image" class="w-[120px] h-[120px] rounded-lg object-cover shadow-2xl
+           lg:w-full lg:h-fit lg:shadow-sm
+           ">
+                        <!-- title desc(desc hidden on mobile) photos and name profesi -->
+                        <div>
+                            <!-- title and desc(hidden on mobile) -->
+                            <div>
+                                <h3 class="font-bold text-[15px] leading-7 
+                   lg:mt-4 lg:text-[20px]">Big 4 Auditor Financial Analyst</h3>
+                                <p
+                                    class="hidden lg:flex lg:mt-[10px] lg:line-clamp-2 text-textColorsecond text-[15px] font-light">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ratione voluptates
+                                    aliquam porro. Esse sed eum minima quasi consectetur, quia aliquid suscipit aut
+                                    blanditiis, eaque excepturi velit sint, nam a?</p>
+                            </div>
+                            <!-- image and name profesi -->
+                            <div class="flex gap-3 mt-[10px]">
+                                <img src="images/ava.png" alt="avatar teach" class="w-[45px] h-[45px] rounded-sm
+                   ">
+                                <div class="block">
+                                    <h4 class="font-semibold text-[16px]">Jenna Ortega</h4>
+                                    <p class="text-[12px] text-textColorsecond">Senior Accountant
+                                        <span class="hidden lg:inline">di <span
+                                                class="hidden lg:inline lg:font-bold">Gojek</span></span>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- rating dan price -->
+                    <div class="flex mt-[14px] justify-between mr-2 lg:gap-3 lg:mr-0">
+                        <div class="flex justify-center gap-2 lg:mt-1">
+                            <img src="images/Rating.png" alt="rating"
+                                class="w-[90px] h-[20px] mt-[10px] lg:w-[100px] lg:h-[20px] lg:mt-1.5">
+                            <p class=" text-textColorsecond mt-2 lg:text-[12px]">3.5 (86)</p>
+                        </div>
+                        <div>
+                            <p class="text-greenPrimary text-[20px] mt-[5px] font-[700]">RP 300K </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of card -->
+
+                <!-- card start -->
+                <div class="bg-white w-[90%] mx-5 py-5 px-5 my-3 h-fit block rounded-lg drop-shadow-xl shadow-xl sm:px-9
+    lg:w-[30%] lg:px-3 lg:mx-0
+">
+                    <!-- gambar content judul deskrispsi -->
+                    <div class="flex gap-5 lg:block whitespace-normal">
+                        <img src="images/card-image2.png" alt="card image" class="w-[120px] h-[120px] rounded-lg object-cover shadow-2xl
+        lg:w-full lg:h-fit lg:shadow-sm
+        ">
+                        <!-- title desc(desc hidden on mobile) photos and name profesi -->
+                        <div>
+                            <!-- title and desc(hidden on mobile) -->
+                            <div>
+                                <h3 class="font-bold text-[15px] leading-7 
+                lg:mt-4 lg:text-[20px]">Big 4 Auditor Financial Analyst</h3>
+                                <p
+                                    class="hidden lg:flex lg:mt-[10px] lg:line-clamp-2 text-textColorsecond text-[15px] font-light">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ratione voluptates
+                                    aliquam porro. Esse sed eum minima quasi consectetur, quia aliquid suscipit aut
+                                    blanditiis, eaque excepturi velit sint, nam a?</p>
+                            </div>
+                            <!-- image and name profesi -->
+                            <div class="flex gap-3 mt-[10px]">
+                                <img src="images/ava.png" alt="avatar teach" class="w-[45px] h-[45px] rounded-sm
+                ">
+                                <div class="block">
+                                    <h4 class="font-semibold text-[16px]">Jenna Ortega</h4>
+                                    <p class="text-[12px] text-textColorsecond">Senior Accountant
+                                        <span class="hidden lg:inline">di <span
+                                                class="hidden lg:inline lg:font-bold">Gojek</span></span>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- rating dan price -->
+                    <div class="flex mt-[14px] justify-between mr-2 lg:gap-3 lg:mr-0">
+                        <div class="flex justify-center gap-2 lg:mt-1">
+                            <img src="images/Rating.png" alt="rating"
+                                class="w-[90px] h-[20px] mt-[10px] lg:w-[100px] lg:h-[20px] lg:mt-1.5">
+                            <p class=" text-textColorsecond mt-2 lg:text-[12px]">3.5 (86)</p>
+                        </div>
+                        <div>
+                            <p class="text-greenPrimary text-[20px] mt-[5px] font-[700]">RP 300K </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of card -->
+
+                <!-- card start -->
+                <div class="bg-white w-[90%] mx-5 py-5 px-5 my-3 h-fit block rounded-lg drop-shadow-xl shadow-xl sm:px-9
+ lg:w-[30%] lg:px-3 lg:mx-0
+">
+                    <!-- gambar content judul deskrispsi -->
+                    <div class="flex gap-5 lg:block whitespace-normal">
+                        <img src="images/card-image2.png" alt="card image" class="w-[120px] h-[120px] rounded-lg object-cover shadow-2xl
+     lg:w-full lg:h-fit lg:shadow-sm
+     ">
+                        <!-- title desc(desc hidden on mobile) photos and name profesi -->
+                        <div>
+                            <!-- title and desc(hidden on mobile) -->
+                            <div>
+                                <h3 class="font-bold text-[15px] leading-7 
+             lg:mt-4 lg:text-[20px]">Big 4 Auditor Financial Analyst</h3>
+                                <p
+                                    class="hidden lg:flex lg:mt-[10px] lg:line-clamp-2 text-textColorsecond text-[15px] font-light">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ratione voluptates
+                                    aliquam porro. Esse sed eum minima quasi consectetur, quia aliquid suscipit aut
+                                    blanditiis, eaque excepturi velit sint, nam a?</p>
+                            </div>
+                            <!-- image and name profesi -->
+                            <div class="flex gap-3 mt-[10px]">
+                                <img src="images/ava.png" alt="avatar teach" class="w-[45px] h-[45px] rounded-sm
+             ">
+                                <div class="block">
+                                    <h4 class="font-semibold text-[16px]">Jenna Ortega</h4>
+                                    <p class="text-[12px] text-textColorsecond">Senior Accountant
+                                        <span class="hidden lg:inline">di <span
+                                                class="hidden lg:inline lg:font-bold">Gojek</span></span>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- rating dan price -->
+                    <div class="flex mt-[14px] justify-between mr-2 lg:gap-3 lg:mr-0">
+                        <div class="flex justify-center gap-2 lg:mt-1">
+                            <img src="images/Rating.png" alt="rating"
+                                class="w-[90px] h-[20px] mt-[10px] lg:w-[100px] lg:h-[20px] lg:mt-1.5">
+                            <p class=" text-textColorsecond mt-2 lg:text-[12px]">3.5 (86)</p>
+                        </div>
+                        <div>
+                            <p class="text-greenPrimary text-[20px] mt-[5px] font-[700]">RP 300K </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of card -->
+
+
+
+
+            </div>
+
+        </section>
+
+        <section>
+            <div
+                class="bg-[url('/images/ctabanner.png')] bg-no-repeat bg-cover max-w-full h-fit sm:h-fit sm:max-w-[80%] lg:max-w-[80%] mx-4 sm:mx-auto p-6 mt-[60px] mb-[60px] rounded-lg">
+                <div class="relative z-10  items-center justify-center h-full text-white block">
+                    <div class="block mt-[10px] ">
+                        <h2
+                            class="text-[12px] mb-[5px] sm:mb-0 font-light text-center px-[55px] lg:leading-[45px] lg:text-[20px] lg:px-[220px] lg:text-center lg:font-light">
+                            NEWSLETTER
+                        </h2>
+                        <h3
+                            class="leading-[25px] text-[24px] font-bold text-center px-[55px] lg:leading-[45px] lg:text-[35px] lg:px-[220px] lg:text-center lg:font-[700]">
+                            Mau Belajar Lebih Banyak?
+                        </h3>
+                        <p class="px-[12px] lg:px-[280px] lg:text-center pt-2 text-center">
+                            Daftarkan dirimu untuk mendapatkan informasi terbaru dan penawaran spesial dari
+                            program-program
+                            terbaik hariesok.id
+                        </p>
+                    </div>
+                    <div class="relative mt-4 flex justify-center items-center mb-6">
+                        <!-- Input wrapper with button inside -->
+                        <div class="block sm:relative w-[80%] sm:w-[50%]">
+                            <form action="">
+                                <input type="text"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 pr-16"
+                                    placeholder="Masukan Emailmu" required>
+                                <!-- Button inside input -->
+                                <button
+                                    class="hidden lg:inline absolute top-1/2 right-2 transform -translate-y-1/2  bg-orange-600 text-white px-4 py-1 rounded-md  focus:outline-none focus:ring-2 focus:ring-bg-orange-600">
+                                    Subscribe
+                                </button>
+                                <button class="mt-3 px-4 py-2 bg-orange-600 w-full rounded-lg lg:hidden">
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- element footer -->
+    <footer class="bg-white">
+        <div
+            class="max-w-full h-fit sm:h-fit sm:max-w-[80%] lg:max-w-[80%] px-5 mx-4 sm:mx-auto pt-4 mt-[60px] mb-[20px] rounded-lg">
+            <div class="block mt-[5px] mb-6 lg:flex lg:justify-between lg:items-start">
+                <div class="block lg:w-[35%]">
+                    <img src="images/logo-foot.png" alt="logo" class="ml-0">
+                    <p class="font-bold mt-2 text-[20px] ">Gali Potensi Anda Melalui Pembelajaran Video di hariesok.id!</p>
+                    <p class="font-light mt-1 text-[15px]">Jl. Usman Effendi No. 50 Lowokwaru, Malang</p>
+                    <p class="font-light  text-[15px]">+62-877-7123-1234</p>
+                </div>
     
+                <div class="block mt-4 lg:mt-0 lg:flex lg:justify-center lg:items-start gap-5">
+                    
+                    <div class="flex justify-between items-center lg:block">
+                        <p class="text-[15] font-bold">Kategori</p>
+                        <img src="images/arrow-left.png" alt="arrow" class="h-[15px] lg:hidden">
+                        <ul class="hidden lg:block lg:text-textColorsecond font-normal">
+                            <li><a href="">Digital & Teknologi</a></li>
+                            <li><a href="">Pemasaran</a></li>
+                            <li><a href="">Manajemen Bisnis</a></li>
+                            <li><a href="">Pengembangan Diri</a></li>
+                            <li><a href="">Desain</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="flex justify-between items-center mt-1 lg:mt-0 lg:block">
+                        <p class="text-[15] font-bold">Perushaan</p>
+                        <img src="images/arrow-left.png" alt="arrow" class="h-[15px] lg:hidden">
+                        <ul class="hidden lg:block lg:text-textColorsecond font-normal">
+                            <li><a href="">Tentang Kami</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Kebijakan Privasi</a></li>
+                            <li><a href="">Ketentuan Layanan</a></li>
+                            <li><a href="">Bantuan</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-between items-center mt-1 lg:mt-0 lg:block">
+                        <p class="text-[15] font-bold">Komunitas</p>
+                        <img src="images/arrow-left.png" alt="arrow" class="h-[15px] lg:hidden">
+                        <ul class="hidden lg:block lg:text-textColorsecond font-normal">
+                            <li><a href="">Tips Sukses</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="w-[100%] bg-textColorsecond border-opacity-100">
+            <div class="flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center mt-3">
+                <!-- untuk copyright -->
+                <div class="mt-2 ">
+                    <p class="text-[13px] font-light text-textColorsecond">@2023 Gerobak Sayur All Rights Reserved.</p>
+                </div>
+                 <!-- untuk sosmed -->
+                 <div class="flex gap-2 mt-2 lg:mt-0 lg:order-2 order-1">
+                    <img src="images/linkedin.png" alt="sosmed">
+                    <img src="images/facebook.png" alt="sosmed">
+                    <img src="images/ig.png" alt="sosmed">
+                    <img src="images/twit.png" alt="sosmed">
+                </div>
+                
+            </div>
+            
+
+
+        </div>
+    </footer>
 </body>
+
+
+
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden"); // Menampilkan atau menyembunyikan menu
+    });
+</script>
+
 </html>
